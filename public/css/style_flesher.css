@@ -1,0 +1,35 @@
+.error-validate {
+    font-size: 14px;
+    color: red;
+    margin-top: 2px;
+}
+
+.flash-message {
+    width: 100% !important; 
+    margin-bottom: 16px;
+}
+
+.flash-message .message.failed,
+.flash-message .message.success {
+    padding: 16px !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    align-items: center !important;
+    font-size: 16px;
+    border-radius: 4px !important;
+}
+
+.flash-message .message.success {
+    background-color: rgba(154, 252, 154, 0.863) !important;
+    border: 2px solid rgb(60, 255, 60) !important;
+}
+
+.flash-message .message.failed {
+    background-color: rgba(252, 160, 154, 0.863) !important;
+    border: 2px solid rgb(255, 73, 60) !important;
+}
+
+.flash-message .message ion-icon {
+    font-size: 24px !important;
+    cursor: pointer;
+}

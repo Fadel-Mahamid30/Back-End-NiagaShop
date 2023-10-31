@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+section#container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+section#container .card {
+    max-width: 360px;
+    width: 100%;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+section#container .card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+section#container .card form .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+section#container .card form .logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #233142;
+}
+
+section#container .card form .text {
+    margin-bottom: 12px;
+}
+
+section#container .card form .text h2{
+    font-size: 22px;
+    font-weight: 500;
+    color: #233142;
+}
+
+section#container .card form .text p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #233142;
+}
+
+section#container .card form .inputs label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+section#container .card form .inputs label:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+section#container .card form .inputs label {
+    position: relative;
+}
+
+section#container .card form .inputs label span{
+    display: block;
+    font-size: 16px;
+    color: #233142;
+    margin-bottom: 4px;
+}
+
+section#container .card form .inputs label .input{
+    padding: 8px 0px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #233142;
+    outline: none;
+}
+
+section#container .card form .inputs label .input::placeholder {
+    color: #9A9A9A;
+}
+
+section#container .card form .inputs .btn-login{
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color:  #233142;
+    outline: none;
+    border-radius: 4px;
+}
+
+section#container .card form .inputs .btn-login:hover{
+    background-color:  #1d2936;
+}

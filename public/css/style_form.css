@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+section#container {
+    min-height: 100vh;
+    /* background-color: #F2F2F2; */
+    padding: 24px;
+}
+section#container .return {
+    width: 100%;
+}
+
+section#container .return .btn-return {
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+    font-size: 18px;
+    align-items: center;
+    color: #B2B7BC;
+}
+
+section#container .return .btn-return ion-icon {
+    font-size: 24px;
+}
+
+section#container .card {
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+section#container .card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+section#container .card .image {
+    background-color: #B2B7BC;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+section#container .card .image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+section#container .card form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+section#container .card form label {
+    display: block;
+}
+
+section#container .card form label .input-ukuran {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+section#container .card form label .input-ukuran #btn-addUkuran {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    width: 39px;
+    background-color: #233142;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+section#container .card form label span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+section#container .card form label input[type="text"],
+section#container .card form label input[type="number"] {
+    width: 100%;
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+}
+
+section#container .card form label .input-ukuran input[type="number"] {
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+section#container .card form input[type="file"] {
+    display: none;
+
+}
+
+section#container .card form .file-upload {
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+section#container .card form .file-upload .btn-select {
+    background-color: #233142;
+    color: white;
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+section#container .card form .file-upload .name-file {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+section#container .card form #list-ukuran {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #eee;
+    gap: 2px;
+    padding: 8px;
+}
+
+section#container .card form #list-ukuran .item-ukuran {
+    padding: 4px 8px;
+    display: flex;
+    /* width: 100px; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #233142;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+section#container .card form #list-ukuran .item-ukuran ion-icon {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section#container .card form label textarea {
+    width: 100%;
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+}
+
+section#container #content .body-content .data-action .search .input-search::placeholder {
+    color: #6A6A6A;
+}
+
+section#container .card form .btn-submit {
+    padding: 10px;
+    background-color: #233142;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+section#container .card form .btn-submit:hover {
+    background-color: #192330;
+}

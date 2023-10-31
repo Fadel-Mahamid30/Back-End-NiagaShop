@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+section#container {
+    min-height: 100vh;
+    background-color: #F2F2F2;
+}
+
+section#container nav {
+    background-color: #233142;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 36px;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+section#container nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+section#container nav .logo img {
+    width: 48px;
+}
+
+section#container nav .logo .text h2 {
+    font-size: 18px;
+    color: white;
+}
+
+section#container nav .logo .text p {
+    font-size: 12px;
+    color: white;
+}
+
+section#container nav .user {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    position: relative;
+}
+
+section#container nav .user .profile {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+section#container nav .user .profile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+section#container nav .user p {
+    font-size: 14px;
+}
+
+section#container nav .user .action {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section#container nav .user .action.active {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+section#container nav .user .menu {
+    display: none;
+}
+
+section#container nav .user .menu.active {
+    display: grid;
+    width: 150px;
+    grid-template-columns: 1rem auto;
+    grid-template-rows: auto;
+    background-color: white;
+    color: #233142;
+    padding: 8px 16px;
+    align-items: center;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -48px;
+    border-top-right-radius: 0px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+section#container nav .user .menu ion-icon {
+    font-size: 24px;
+}
+
+section#container nav .user .menu span {
+    display: block;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section#container nav .user .menu::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+}
+
+section#container #content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 108px 36px 36px 36px;
+    justify-content: center;
+
+}
+
+section#container #content .body-content {
+    max-width: 900px;
+    width: 100%;
+}
+
+section#container #content .body-content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+section#container #content .body-content .data-action {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+section#container #content .body-content .data-action .search {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    overflow: hidden;
+}
+
+section#container #content .body-content .data-action .search .input-search {
+    width: 230px;
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #bebebe;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+section#container #content .body-content .data-action .search .input-search::placeholder {
+    color: #6A6A6A;
+}
+
+section#container #content .body-content .data-action .search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    width: 39px;
+    border: none;
+    background-color: #233142;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+section#container #content .body-content .data-action .add-data {
+    padding: 8px 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px;
+    align-items: center;
+    font-size: 14px;
+    background-color: #233142;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+section#container #content .body-content .data-action .add-data ion-icon {
+    font-size: 24px;
+}
+
+section#container #content .body-content .data-table {
+    background-color: white;
+}
+
+section#container #content .body-content .data-table .table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+section#container #content .body-content .data-table .table table thead th {
+    text-align: start;
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+section#container #content .body-content .data-table .table table thead tr {
+    border-bottom: 1px solid #eee;
+}
+
+section#container #content .body-content .data-table .table table tbody td {
+    text-align: start;
+    padding: 8px 10px;
+}
+
+section#container #content .body-content .data-table .table table tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+section#container #content .body-content .data-table .table table tbody td .produk {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+section#container #content .body-content .data-table .table table tbody td .produk .img-produk {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+section#container #content .body-content .data-table .table table tbody td .produk .img-produk img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+section#container #content .body-content .data-table .table table tbody td .aksi {
+    display: grid;
+    grid-template-columns: 36px 36px 36px;
+    grid-template-rows: auto;
+    gap: 8px;
+    width: auto;
+}
+
+section#container #content .body-content .data-table .table table tbody td .aksi a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    background-color: #6A6A6A;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+section#container #content .body-content .data-table .table table tbody td .aksi a.edit {
+    background-color: #FFA41B;
+}
+
+section#container #content .body-content .data-table .table table tbody td .aksi a.view-detail {
+    background-color: #233142;
+}
+
+section#container #content .body-content .data-table .table table tbody td .aksi a.delete {
+    background-color: red;
+}
+
+#pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #FFA41B; */
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#pagination p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#pagination ul{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    background-color: #FFA41B;
+    gap: 8px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 4px;
+    align-items: center;
+}
+
+#pagination ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+#pagination ul li p {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination ul li .prev,
+#pagination ul li .next {
+    background-color: #233142;
+    color: white;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+
+    section#container #content .body-content .data-table {
+        overflow-y: scroll;
+    }
+
+    section#container #content .body-content .data-table .table{
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    section#container nav {
+        padding: 8px;
+    }
+
+    section#container #content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 88px 8px 8px 8px;
+        justify-content: center;
+    
+    }
+
+    section#container nav .user p {
+        display: none;
+    }
+    
+    section#container #content .body-content .data-action {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        gap: 8px;
+    }
+
+    section#container #content .body-content .data-action .search {
+        grid-template-columns: 1fr auto;
+    }
+
+    section#container #content .body-content .data-action .search .input-search {
+        width: 100%;
+    }
+
+    section#container #content .body-content .data-action .add-data {
+        justify-content: center;
+    }
+
+    section#container #content .body-content h2 {
+        font-size: 20px;
+    }
+}
